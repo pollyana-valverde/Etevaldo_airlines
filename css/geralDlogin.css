@@ -3,6 +3,7 @@
 
 * {
     font-family: "Poppins", sans-serif;
+    color: var(--black);
 }
 
 .navbar {
@@ -83,6 +84,6 @@
 /*cores para o dark mode*/
 
 :root{
-    --black: black;
+    --black: darkblue;
     --white: white;
 }
