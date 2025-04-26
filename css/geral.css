@@ -6,6 +6,8 @@
 }
 
 .navbar {
+    width: 98%;
+    position: fixed;
     margin: 0 15px;
     display: flex;
     justify-content: space-between;
@@ -23,13 +25,13 @@
 }
 
 .navbar a {
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
 }
 
 .navbar ul a {
     transition: all .3s ease;
-    border-bottom: 2px solid var(--white);
+    border-bottom: 2px solid transparent;
 }
 
 .navbar ul a:hover {
@@ -37,25 +39,28 @@
 }
 
 .navbar a button {
+    backdrop-filter: blur(10px);
     border-radius: 50px;
-    border: 2px solid var(--black);
+    border: 2px solid var(--white);
     padding: 5px 14px;
+    font-weight: 500;
     font-size: 15px;
+    transition: all .3s ease;
 }
 
 .navbar .cadastroBtn button {
-    background-color: var(--black);
+    background-color: transparent;
     color: var(--white);
 }
 
 .navbar .cadastroBtn button:hover {
-    background-color: transparent;
-    color: var(--black);
+    background-color: var(--black);
+    color: var(--white);
 }
 
 .navbar .loginBtn button {
     background-color: transparent;
-    color: var(--black);
+    color: var(--white);
 }
 
 .navbar .loginBtn button:hover {

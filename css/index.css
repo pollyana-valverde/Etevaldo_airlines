@@ -1,0 +1,269 @@
+@import url('geral.css');
+
+/* .index_inicio {
+    position: relative;
+    display: flex;
+} */
+
+.banner_inicio {
+    background-image: url('../imagens/banner1.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 98vh;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.411);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner_inicio h1 {
+    width: 70%;
+    margin: unset;
+    line-height: 80px;
+    color: var(--white);
+    font-size: 62px;
+    font-weight: 500;
+}
+
+.banner_inicio .dropbar_search {
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--white);
+    backdrop-filter: blur(10px);
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.banner_inicio .dropbar_search h3 {
+    font-weight: 500;
+    color: var(--white);
+    margin: unset;
+}
+
+.banner_inicio .dropbar_search h3 i {
+    margin-left: 10px;
+    color: var(--white);
+}
+
+.banner_inicio .dropbar_search .divisor {
+    background-color: var(--white);
+    height: 25px;
+    width: 1px;
+}
+
+
+.banner_inicio .dropbar_search button {
+    padding: 6px 25px;
+    background-color: var(--white);
+    backdrop-filter: blur(10px);
+    color: var(--black);
+    font-size: 17px;
+    border: 1px solid var(--white);
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.banner_inicio .dropbar_search button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.info_cta {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    width: 95%;
+}
+
+.info_cta .info_content {
+    width: 40%;
+    text-align: left;
+}
+
+.info_cta .info_content h4 {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    padding: 8px 17px;
+    width: 23%;
+}
+
+.info_cta .info_content h4 i {
+    color: var(--white);
+    margin-right: 5px;
+}
+
+.info_cta .info_content p {
+    color: var(--white);
+    font-size: 20px;
+}
+
+.info_cta button {
+    background-color: transparent;
+    color: var(--white);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 2px solid var(--white);
+    padding: 8px 18px;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all .3s ease;
+}
+
+.info_cta button i {
+    margin-left: 8px;
+    color: var(--white);
+}
+
+
+.info_cta button:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
+/*seção sobre nós*/
+.index_about {
+    margin-top: 120px;
+    display: flex;
+    width: 98%;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.index_about h1 {
+    margin: 0 20px;
+    width: 40%;
+    font-size: 33px;
+    font-weight: 400;
+}
+
+.index_about h1 span {
+    opacity: 0.5;
+}
+
+.index_about .about_content {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    gap: 20px;
+}
+
+.index_about .about_content .divisor {
+    background-color: var(--black);
+    height: 45px;
+    width: 2px;
+    margin: 0 10px;
+}
+
+.index_about .about_content .about_info h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: unset;
+}
+
+.index_about .about_content .about_info h5 {
+    margin: unset;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*seção de amostra de alguns serviços*/
+.index_services {
+    width: 98%;
+    height: 90vh;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.index_services .services_title {
+    margin: 0 20px;
+}
+
+.index_services .services_title h1{
+    font-size: 50px;
+    font-weight: 400;
+    margin: unset;
+}
+
+.index_services .services_title p{
+    margin: unset;
+    width: 70%;
+    font-size: 20px;
+}
+
+.index_services .services_content {
+    margin:20px;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    gap: 20px;
+}
+
+.index_services .services_content .place1 {
+    background-image: url('../imagens/place1.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.411);
+    display: flex;
+    align-items: end;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.index_services .services_content .place1 h2{
+    margin:20px 25px;
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.index_services .services_content .content_places {
+    width: 50%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.index_services .services_content .content_places .place2, .index_services .services_content .content_places .place3{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.411);
+    display: flex;
+    align-items: end;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.index_services .services_content .content_places .place2{
+    background-image: url('../imagens/place2.avif');
+}
+
+.index_services .services_content .content_places .place3{
+    background-image: url('../imagens/place3.avif');
+}
+
+.index_services .services_content .content_places .place2 h2, .index_services .services_content .content_places .place3 h2{
+    margin:20px 25px;
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 500;
+}
