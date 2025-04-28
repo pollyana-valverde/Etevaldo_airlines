@@ -6,6 +6,7 @@
 }
 
 .navbar {
+    z-index: 9;
     width: 98%;
     position: fixed;
     margin: 0 15px;

@@ -195,20 +195,20 @@
     margin: 0 20px;
 }
 
-.index_services .services_title h1{
+.index_services .services_title h1 {
     font-size: 50px;
     font-weight: 400;
     margin: unset;
 }
 
-.index_services .services_title p{
+.index_services .services_title p {
     margin: unset;
     width: 70%;
     font-size: 20px;
 }
 
 .index_services .services_content {
-    margin:20px;
+    margin: 20px;
     width: 100%;
     display: flex;
     height: 100%;
@@ -222,17 +222,46 @@
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.411);
     display: flex;
-    align-items: end;
+    align-items: start;
+    justify-content: end;
     width: 50%;
     height: 100%;
     border-radius: 20px;
+    flex-direction: column;
+    transition: all .7s ease;
+    position: relative;
 }
 
-.index_services .services_content .place1 h2{
-    margin:20px 25px;
+.index_services .services_content .place1 h2 {
+    margin: 0 25px 20px 25px;
     color: var(--white);
     font-size: 40px;
+    transition: all .7s ease;
     font-weight: 500;
+}
+
+.index_services .services_content .place1:hover h2 {
+    margin-bottom: unset;
+}
+
+.index_services .services_content .place1 p {
+    position: absolute;
+    overflow: hidden !important;
+    margin: 0 25px 20px 25px;
+    bottom: -50px;
+    height: 0;
+    color: transparent;
+    font-weight: 500;
+    transition: all .5s ease;
+}
+
+.index_services .services_content .place1:hover p {
+    margin: 0 25px 20px 25px;
+    overflow: visible;
+    height: auto;
+    bottom: 0;
+    color: var(--white);
+    position: relative;
 }
 
 .index_services .services_content .content_places {
@@ -242,28 +271,137 @@
     flex-direction: column;
 }
 
-.index_services .services_content .content_places .place2, .index_services .services_content .content_places .place3{
+.index_services .services_content .content_places .place2,
+.index_services .services_content .content_places .place3 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.411);
     display: flex;
-    align-items: end;
+    align-items: start;
+    justify-content: end;
     height: 50%;
     border-radius: 20px;
+    flex-direction: column;
 }
 
-.index_services .services_content .content_places .place2{
+.index_services .services_content .content_places .place2 {
     background-image: url('../imagens/place2.avif');
 }
 
-.index_services .services_content .content_places .place3{
+.index_services .services_content .content_places .place3 {
     background-image: url('../imagens/place3.avif');
 }
 
-.index_services .services_content .content_places .place2 h2, .index_services .services_content .content_places .place3 h2{
-    margin:20px 25px;
+.index_services .services_content .content_places .place2 h2,
+.index_services .services_content .content_places .place3 h2 {
+    margin: 0 25px 20px 25px;
     color: var(--white);
     font-size: 40px;
+    transition: all .7s ease;
     font-weight: 500;
+}
+
+.index_services .services_content .content_places .place2:hover h2,
+.index_services .services_content .content_places .place3:hover h2 {
+    margin-bottom: unset;
+}
+
+.index_services .services_content .place2 p,
+.index_services .services_content .place3 p {
+    position: absolute;
+    overflow: hidden !important;
+    margin: 0 25px 20px 25px;
+    bottom: -50px;
+    height: 0;
+    color: transparent;
+    font-weight: 500;
+    transition: all .5s ease;
+}
+
+.index_services .services_content .place2:hover p,
+.index_services .services_content .place3:hover p {
+    margin: 0 25px 20px 25px;
+    overflow: visible;
+    height: auto;
+    bottom: 0;
+    color: var(--white);
+    position: relative;
+}
+
+
+/*seção de amostra de alguns pacotes*/
+.index_package {
+    width: 98%;
+    height: 90vh;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.index_package h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    margin: unset;
+}
+
+.index_package .package_content {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    height: 100%;
+    gap: 20px;
+}
+
+.index_package .package_content .package1,
+.index_package .package_content .package2,
+.index_package .package_content .package3 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.411);
+    display: flex;
+    align-items: start;
+    width: 35%;
+    justify-content: end;
+    border-radius: 20px;
+    flex-direction: column;
+    transition: all .5s ease;
+}
+
+.index_package .package_content .package1 {
+    background-image: url('../imagens/package1.avif');
+}
+
+
+.index_package .package_content .package2 {
+    background-image: url('../imagens/package2.avif');
+}
+
+.index_package .package_content .package3 {
+    background-image: url('../imagens/package3.avif');
+}
+
+.index_package .package_content .package1:hover,
+.index_package .package_content .package2:hover,
+.index_package .package_content .package3:hover {
+    width: 60%;
+}
+
+.index_package .package_content .package1 .package_info h2,
+.index_package .package_content .package2 .package_info h2,
+.index_package .package_content .package3 .package_info h2 {
+    margin: 0 25px;
+    color: var(--white);
+    font-size: 40px;
+    transition: all .7s ease;
+    font-weight: 500;
+}
+
+.index_package .package_content .package1 .package_info p,
+.index_package .package_content .package2 .package_info p,
+.index_package .package_content .package3 .package_info p {
+    margin: 0 25px 20px 25px;
+    color: var(--white);
 }
