@@ -367,7 +367,8 @@
     justify-content: end;
     border-radius: 20px;
     flex-direction: column;
-    transition: all .5s ease;
+    transition: all .8s ease;
+    position: relative;
 }
 
 .index_package .package_content .package1 {
@@ -387,11 +388,37 @@
 .index_package .package_content .package2:hover,
 .index_package .package_content .package3:hover {
     width: 60%;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
 }
 
-.index_package .package_content .package1 .package_info h2,
-.index_package .package_content .package2 .package_info h2,
-.index_package .package_content .package3 .package_info h2 {
+.index_package .package_content .package1 h5,
+.index_package .package_content .package2 h5,
+.index_package .package_content .package3 h5 {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-weight: 500;
+    color: var(--white);
+    border-radius: 50px;
+    border: 1px solid var(--white);
+    padding: 7px 12px;
+    font-size: 16px;
+    backdrop-filter: blur(6px);
+}
+
+.index_package .package_content .package_info {
+    transition: all .7s ease;
+}
+
+.index_package .package_content .package1:hover .package_info,
+.index_package .package_content .package2:hover .package_info,
+.index_package .package_content .package3:hover .package_info {
+    width: 70%;
+}
+
+.index_package .package_content .package_info h2 {
     margin: 0 25px;
     color: var(--white);
     font-size: 40px;
@@ -399,9 +426,35 @@
     font-weight: 500;
 }
 
-.index_package .package_content .package1 .package_info p,
-.index_package .package_content .package2 .package_info p,
-.index_package .package_content .package3 .package_info p {
+.index_package .package_content .package_info p {
     margin: 0 25px 20px 25px;
     color: var(--white);
+    transition: all .7s ease;
+}
+
+.index_package .package_content a {
+    width: 20%;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--white);
+    margin: 20px;
+    border-radius: 50px;
+    border: 1px solid var(--white);
+    padding: 8px 13px;
+    font-size: 18px;
+    transition: all .7s ease;
+    justify-content: center;
+    backdrop-filter: blur(6px);
+    display: none;
+}
+
+.index_package .package_content a:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.index_package .package_content .package1:hover a,
+.index_package .package_content .package2:hover a,
+.index_package .package_content .package3:hover a {
+    display: flex;
 }
