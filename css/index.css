@@ -1,10 +1,7 @@
 @import url('geral.css');
 
-/* .index_inicio {
-    position: relative;
-    display: flex;
-} */
 
+/*seção início*/
 .banner_inicio {
     background-image: url('../imagens/banner1.avif');
     background-repeat: no-repeat;
@@ -457,4 +454,212 @@
 .index_package .package_content .package2:hover a,
 .index_package .package_content .package3:hover a {
     display: flex;
+}
+
+/* seção do faq */
+.index_faq {
+    width: 98%;
+    margin-top: 120px;
+    display: flex;
+    justify-items: center;
+    align-items: start;
+    gap: 40px;
+}
+
+.index_faq .faq_title {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.index_faq .faq_title h1 {
+    margin-bottom: unset;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.index_faq .faq_title h3 {
+    color: var(--black);
+    opacity: 0.5;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.index_faq .faq {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.index_faq .faq .faq-header {
+    text-align: left;
+    width: 100%;
+    padding: 16px 20px;
+    background-color: transparent;
+    border: 1px solid var(--lowBlack) !important;
+    font-size: 24px !important;
+    font-weight: 500;
+    color: var(--black);
+    border-radius: 20px !important;
+}
+
+.index_faq .faq .faq-header.collapsed {
+    padding-bottom: unset;
+    font-weight: 600;
+    border-bottom: none !important;
+    border-radius: 20px 20px 0 0 !important;
+}
+
+.index_faq .faq .faq-body {
+    padding-top: unset;
+    color: var(--black);
+    padding: 20px;
+    border-radius: 0 0 20px 20px !important;
+    border: 1px solid var(--lowBlack) !important;
+    border-top: none !important;
+}
+
+.index_faq .accordion-body {
+    padding-top: unset !important;
+}
+
+/*seção de review de usuários*/
+.index_review {
+    width: 98%;
+    margin-top: 120px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.index_review h1{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.index_review .review_group {
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.index_review .review_group .review_content {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--lowBlack) !important;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.index_review .review_group .review_content .review_header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.index_review .review_group .review_content .review_header img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+}
+
+.index_review .review_group .review_content .review_header h3 {
+    font-weight: 500;
+    font-size: 23px;
+    margin: unset;
+}
+
+.index_review .review_group .review_content p {
+    margin-bottom: unset;
+    font-size: 18px;
+}
+
+/*seção início*/
+.index_newletter{
+    margin-top: 120px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.banner_newletter {
+    background-image: url('../imagens/imgNewsletter.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 98vh;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.411);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner_newletter h1 {
+    width: 70%;
+    margin: unset;
+    line-height: 80px;
+    color: var(--white);
+    font-size: 62px;
+    font-weight: 500;
+}
+
+.banner_newletter .drop_email {
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--white);
+    backdrop-filter: blur(10px);
+    padding: 5px 7px;
+    border-radius: 50px;
+}
+
+.banner_newletter .drop_email input {
+    padding: 10px 15px;
+    color: var(--white);
+    margin: unset;
+    border-radius: 50px;
+    background-color: transparent;
+    border: none;
+}
+
+.banner_newletter .drop_email input::placeholder{
+    color: var(--white);
+}
+
+.banner_newletter .drop_email input:focus{
+    border: none;
+    outline: none;
+}
+
+.banner_newletter .drop_email .divisor {
+    background-color: var(--white);
+    height: 25px;
+    width: 1px;
+}
+
+.banner_newletter .drop_email button {
+    padding: 6px 25px;
+    background-color: var(--white);
+    backdrop-filter: blur(10px);
+    color: var(--black);
+    font-size: 17px;
+    border: 1px solid var(--white);
+    font-weight: 600;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.banner_newletter .drop_email button:hover {
+    background-color: var(--black);
+    color: var(--white);
 }
