@@ -565,6 +565,7 @@
 .index_review .review_group .review_content .review_header img {
     width: 45px;
     height: 45px;
+    object-fit: cover;
     border-radius: 50px;
 }
 
@@ -579,7 +580,7 @@
     font-size: 18px;
 }
 
-/*seção início*/
+/*seção do news letter*/
 .index_newletter{
     margin-top: 120px;
     display: flex;
