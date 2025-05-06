@@ -73,6 +73,7 @@
 
 :root{
     --black: darkblue;
-    --lowBlack: rgba(0, 0, 139, 0.37);
+    --lowBlack: #00008b5e;
+    --superLowBlack: #00008b13;
     --white: white;
 }

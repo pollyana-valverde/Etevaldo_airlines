@@ -40,33 +40,6 @@
     border-bottom: 2px solid;
 }
 
-.navbar a button {
-    border-radius: 50px;
-    border: 2px solid var(--black);
-    padding: 5px 14px;
-    font-size: 15px;
-}
-
-.navbar .cadastroBtn button {
-    background-color: var(--black);
-    color: var(--white);
-}
-
-.navbar .cadastroBtn button:hover {
-    background-color: transparent;
-    color: var(--black);
-}
-
-.navbar .loginBtn button {
-    background-color: transparent;
-    color: var(--black);
-}
-
-.navbar .loginBtn button:hover {
-    background-color: var(--black);
-    color: var(--white);
-}
-
 .perfil_drop{
     gap: 10px;
     display: flex;
@@ -81,6 +54,7 @@
     border-radius: 50px;
 }
 
-.perfil_drop p, .perfil_drop h5{
+.perfil_drop p, .perfil_drop h5 , .perfil_drop p i {
+    color: var(--white) !important;
     margin: unset !important;
 }
