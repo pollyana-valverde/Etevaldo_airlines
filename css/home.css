@@ -16,7 +16,7 @@
     text-align: center;
 }
 
-.banner_inicio h1{
+.banner_inicio h1 {
     font-size: 60px;
     color: var(--white);
     font-weight: 500;
@@ -43,7 +43,7 @@
 }
 
 .home_searchFilter .searchFilter_header h5 {
-    color: var(--white) ; 
+    color: var(--white);
     font-weight: 500;
     font-size: 32px;
 }
@@ -82,7 +82,7 @@
 .home_searchFilter .searchFilter_content .searchFilter_input label {
     font-size: 17px;
     font-weight: 600;
-    color: var(--white) ; 
+    color: var(--white);
 }
 
 .home_searchFilter .searchFilter_content .searchFilter_input input,
@@ -90,7 +90,7 @@
     padding: 15px 10px;
     border-radius: 10px;
     border-color: transparent;
-    color: var(--white) ; 
+    color: var(--white);
     backdrop-filter: blur(20px);
     box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.151) inset;
     background-color: var(--superLwBlack);
@@ -101,7 +101,7 @@
     font-size: 17px !important;
 }
 
-.home_searchFilter .searchFilter_content .searchFilter_input select option{
+.home_searchFilter .searchFilter_content .searchFilter_input select option {
     font-size: 15px !important;
     color: var(--black);
 }
@@ -164,85 +164,35 @@
     background-color: transparent;
 }
 
-.home_searchFilter .searchFilter_footer .searchFilter_action button.clear{
-    border:1px solid transparent;
+.home_searchFilter .searchFilter_footer .searchFilter_action button.clear {
+    border: 1px solid transparent;
     color: var(--white);
     transition: all .3s ease;
 }
 
-.home_searchFilter .searchFilter_footer .searchFilter_action button.clear:hover{
-    border:1px solid var(--white);
+.home_searchFilter .searchFilter_footer .searchFilter_action button.clear:hover {
+    border: 1px solid var(--white);
 }
 
-.home_searchFilter .searchFilter_footer .searchFilter_action button.search{
+.home_searchFilter .searchFilter_footer .searchFilter_action button.search {
     background-color: var(--white);
-    color: var(--black) ; 
-    padding: 7px ;
+    color: var(--black);
+    padding: 7px;
     width: 15% !important;
 }
 
-.home_searchFilter .searchFilter_footer .searchFilter_action button.search i{
-    color: var(--black) ; 
+.home_searchFilter .searchFilter_footer .searchFilter_action button.search i {
+    color: var(--black);
     margin-right: -10px;
     margin-left: 10px;
     transition: all .3s ease;
 }
 
-.home_searchFilter .searchFilter_footer .searchFilter_action button.search:hover i{
+.home_searchFilter .searchFilter_footer .searchFilter_action button.search:hover i {
     margin-right: -30px;
 }
 
-
-
-.catalogoHeader {
-    position: relative;
-    background-image: url('../imagens/jardim10.avif');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 45vh;
-    overflow: hidden;
-    align-items: center;
-}
-
-.catalogoHeader::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 20px;
-    pointer-events: none;
-    backdrop-filter: blur(4px);
-}
-
-.catalogoHeader h1 {
-    z-index: 1;
-    color: var(--creamyBiscotti);
-}
-
-.catalogoHeader p {
-    font-size: 18px;
-    margin: unset;
-    z-index: 1;
-    color: var(--creamyBiscotti);
-}
-
-.catalogoHeader p a {
-    color: var(--slateBlue) !important;
-    transition: all .3s ease;
-}
-
-.catalogoHeader p a:hover {
-    text-decoration: underline !important;
-}
-
+/*parte dos produtos depois da home*/
 .catalogoCategory {
     display: flex;
     justify-content: start;
@@ -256,26 +206,31 @@
     color: var(--oliveWoodLow);
 }
 
-.catalogoProdutos-container {
+.catalogoProdutos_container {
     display: flex;
-    align-items: center;
+    align-items: start;
     position: relative;
+    flex-direction: column;
 }
 
-.catalogoProdutos-container button.scroll-button {
-    color: var(--creamyBiscotti);
-    background-color: var(--oliveWood);
+.catalogoProdutos_container .buttons_catalogo{
+    display: flex;
+}
+
+.catalogoProdutos_container .buttons_catalogo button.scroll-button {
+    color: var(--black);
+    background-color: var(--white);
     padding: 7px 12px;
     border-radius: 50px;
     transition: all .3s ease;
 }
 
-.catalogoProdutos-container button.scroll-button:hover {
-    color: var(--oliveWood);
-    background-color: var(--creamyBiscotti);
+.catalogoProdutos_container .buttons_catalogo button.scroll-button:hover {
+    color: var(--white);
+    background-color: var(--black);
 }
 
-.catalogoProdutos-content {
+.catalogoProdutos_content {
     display: flex;
     overflow-x: auto;
     scrollbar-width: none;
@@ -285,67 +240,99 @@
     background-color: transparent;
     padding: 10px;
     border: none;
-    margin: 0 40px;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
-.catalogoProdutos-content::-webkit-scrollbar {
+.catalogoProdutos_content::-webkit-scrollbar {
     display: none;
 }
 
-.contentProdutos {
+.catalogoProdutos_content .produtos_corpo {
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
     position: relative;
     display: flex;
+    transition: all .3s ease;
     flex-direction: column;
 }
 
-.contentProdutos .imgProduto img {
-    height: 300px;
-    width: 300px;
+.catalogoProdutos_content .produtos_corpo:hover{
+    border: 1.5px solid var(--black);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.catalogoProdutos_content .produtos_corpo img {
+    height: 250px;
+    width: 400px;
     border-radius: 20px;
     object-fit: cover;
 }
 
-.contentProdutos .nomeProduto {
-    position: absolute;
+.catalogoProdutos_content .produtos_corpo h4 {
+    margin: unset;
+    font-weight: 600;
+    color: var(--black);
+    font-size: 21px;
+}
+
+.catalogoProdutos_content .produtos_corpo .produtos_detalhes {
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 0px;
-    color: transparent;
-    left: 0px;
-    bottom: 0px;
-    overflow: hidden;
-    transition: all.4s ease;
-    background-color: transparent;
-    border-radius: 20px;
+    justify-content: space-between;
 }
 
-.contentProdutos:hover .nomeProduto {
-    height: 100px;
-    color: var(--creamyBiscotti);
-    background-color: var(--slateBlueLow);
-    bottom: 7px;
-    left: 0;
-    backdrop-filter: blur(10px);
-    padding: 2px 12px;
+.catalogoProdutos_content .produtos_corpo .produtos_detalhes .detalhe {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
-.contentProdutos .nomeProduto h4 {
-    font-weight: 600;
-    font-size: x-large;
+.catalogoProdutos_content .produtos_corpo .produtos_detalhes .detalhe p {
+    margin: unset;
 }
 
-
-.contentProdutos .nomeProduto a {
-    color: var(--slateBlue);
-    font-weight: 600;
-    text-decoration: none;
+.catalogoProdutos_content .produtos_corpo .produtos_footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.contentProdutos .nomeProduto a span {
-    transition: all .4s ease
+.catalogoProdutos_content .produtos_corpo .produtos_footer .produtos_price {
+    display: flex;
+    flex-direction: column;
 }
 
-.contentProdutos .nomeProduto a:hover span {
+.catalogoProdutos_content .produtos_corpo .produtos_footer .produtos_price h4 span {
+    font-size: 15px;
+}
+
+.catalogoProdutos_content .produtos_corpo .produtos_footer .produtos_price p {
+    margin: unset;
+    font-size: 14px;
+}
+
+.catalogoProdutos_content .produtos_corpo .produtos_footer a button {
+    font-size: 18px;
+    border-radius: 50px;
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    padding: 5px 20px;
+    color: var(--white);
+    transition: all .3s ease;
+}
+
+.catalogoProdutos_content .produtos_corpo .produtos_footer a button i {
+    color: var(--white);
+    transition: all .3s ease;
+    margin-left: 5px;
+}
+
+.catalogoProdutos_content .produtos_corpo .produtos_footer a button:hover i {
     margin-left: 10px;
+    margin-right: -5px;
 }
