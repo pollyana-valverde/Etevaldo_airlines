@@ -258,7 +258,6 @@
     transition: all .3s ease;
     flex-direction: column;
     flex: 0 0 auto;
-    width: 300px;
 }
 
 .produtos_corpo:hover{
