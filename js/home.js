@@ -240,13 +240,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     window.scrollTabs = function (button, direction) {
-        const container = button.closest('.catalogoProdutos_container').querySelector('.catalogoProdutos_content');
-        const scrollAmount = 700;
-        container.scrollBy({
-            left: direction === 'left' ? -scrollAmount : scrollAmount,
-            behavior: 'smooth',
-        });
-    };
+    console.log('Scroll acionado:', direction);
+    const container = button.closest('.catalogoProdutos_container').querySelector('.catalogoProdutos_content');
+    const scrollAmount = 700;
+    container.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth',
+    });
+};
+
 
     renderCarrossel();
 });
