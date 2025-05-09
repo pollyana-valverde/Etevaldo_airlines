@@ -239,14 +239,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    window.scrollTabs = function (button, direction) {
-    console.log('Scroll acionado:', direction);
-    const container = button.closest('.catalogoProdutos_container').querySelector('.catalogoProdutos_content');
-    const scrollAmount = 700;
-    container.scrollBy({
-        left: direction === 'left' ? -scrollAmount : scrollAmount,
-        behavior: 'smooth',
-    });
+    const leftBtn = document.querySelector(".scroll-button.left");
+            const rightBtn = document.querySelector(".scroll-button.right");
+            const scrollContainer = document.querySelector(".catalogoProdutos_content");
+
+            leftBtn.addEventListener("click", () => {
+                scrollContainer.scrollBy({ left: -400, behavior: 'smooth' });
+            });
+
+            rightBtn.addEventListener("click", () => {
+                scrollContainer.scrollBy({ left: 400, behavior: 'smooth' });
+            });
 };
 
 
