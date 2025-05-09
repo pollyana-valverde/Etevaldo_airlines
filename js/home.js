@@ -246,7 +246,6 @@ document.addEventListener("DOMContentLoaded", function () {
         left: direction === 'left' ? -scrollAmount : scrollAmount,
         behavior: 'smooth',
     });
-};
 
 
     renderCarrossel();
