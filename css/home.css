@@ -232,6 +232,7 @@
 
 .catalogoProdutos_content {
     display: flex;
+    flex-wrap: nowrap;
     overflow-x: auto !important;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -256,6 +257,8 @@
     display: flex;
     transition: all .3s ease;
     flex-direction: column;
+    flex: 0 0 auto;
+    width: 300px;
 }
 
 .produtos_corpo:hover{
