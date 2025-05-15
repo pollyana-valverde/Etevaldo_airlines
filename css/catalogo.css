@@ -1,0 +1,11 @@
+.selecao_catalogo{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.produtos_catalogo{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
