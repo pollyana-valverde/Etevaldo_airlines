@@ -155,7 +155,13 @@ document.addEventListener("DOMContentLoaded", function () {
             const container = document.createElement("div");
             container.innerHTML = `
                 <div class="catalogoOffer_container">
-
+                    <div class="home_offer">
+                        <h1 class="home_offer_title">Ofertas da semana</h1>
+                        <div class="buttons_catalogo">
+                            <button class="scroll-button left" onclick="scrollTabs(this, 'left')"><</button>
+                            <button class="scroll-button right" onclick="scrollTabs(this, 'right')">></button>
+                        </div>
+                    </div>
                     <div class="catalogoOffer_content">
                         ${categoria.Offer.map(produto => `
                            <div class="Offer_corpo">
@@ -172,10 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
                            </div>
                             `).join('')}
                     </div>
-                    <div class="buttons_catalogo">
-                        <button class="scroll-button left" onclick="scrollTabs(this, 'left')"><</button>
-                        <button class="scroll-button right" onclick="scrollTabs(this, 'right')">></button>
-                    </div>
+                    
                 </div>
             `;
             home_offer_container.appendChild(container);
@@ -184,6 +187,95 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.scrollTabs = function (button, direction) {
         const container = button.closest('.catalogoOffer_container').querySelector('.catalogoOffer_content');
+        const scrollAmount = 700;
+        container.scrollBy({
+            left: direction === 'left' ? -scrollAmount : scrollAmount,
+            behavior: 'smooth',
+        });
+    };
+
+    renderCarrossel();
+});
+
+
+//container de categorias
+document.addEventListener("DOMContentLoaded", function () {
+    const home_categ_container = document.getElementById("home_categ_container");
+    const itensFiltrados = [
+        {
+            Categ: [
+                {
+                    img : 'place1.avif',
+                    nome : 'Top World',
+                },
+                {
+                    img : 'place2.avif',
+                    nome : 'Família',
+                },
+                {
+                    img : 'place3.avif',
+                    nome : 'Luxo',
+                },
+                {
+                    img : 'place1.avif',
+                    nome : 'Top World',
+                },
+                {
+                    img : 'place2.avif',
+                    nome : 'Família',
+                },
+                {
+                    img : 'place3.avif',
+                    nome : 'Luxo',
+                },
+                {
+                    img : 'place1.avif',
+                    nome : 'Top World',
+                },
+                {
+                    img : 'place2.avif',
+                    nome : 'Família',
+                },
+                {
+                    img : 'place3.avif',
+                    nome : 'Luxo',
+                },
+            ]
+        },
+
+    ];
+
+    function renderCarrossel() {
+        home_categ_container.innerHTML = "";
+        itensFiltrados.forEach((categoria, index) => {
+            const container = document.createElement("div");
+            container.innerHTML = `
+                <div class="catalogoCateg_container">
+                    <div class="home_Categ">
+                        <h1 class="home_Categ_title">Ofertas da semana</h1>
+                        <div class="buttons_catalogo">
+                            <button class="scroll-button left" onclick="scrollTabs(this, 'left')"><</button>
+                            <button class="scroll-button right" onclick="scrollTabs(this, 'right')">></button>
+                        </div>
+                    </div>
+                    <div class="catalogoCateg_content">
+                        ${categoria.Categ.map(produto => `
+                            <div class="categ_content">
+                                <img src="imagens/${produto.img}" 
+                                         alt="Banner ${Math.ceil((index + 1) / 3)}" />
+                                <h1>${produto.nome}</h1>
+                            </div>
+                        `).join('')}
+                    </div>
+                    
+                </div>
+            `;
+            home_categ_container.appendChild(container);
+        });
+    }
+
+    window.scrollTabs = function (button, direction) {
+        const container = button.closest('.catalogoCateg_container').querySelector('.catalogoCateg_content');
         const scrollAmount = 700;
         container.scrollBy({
             left: direction === 'left' ? -scrollAmount : scrollAmount,
