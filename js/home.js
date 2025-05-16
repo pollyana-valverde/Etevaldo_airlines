@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                         <h4>R$${produto.price}<span>/Night</span></h4>
                                         <p>Incluso todas as taxas</p>
                                     </div>
-                                    <a href='detalheProduto.html'>
+                                    <a href='detalhesProduto.html'>
                                         <button type="button">
                                             Ver mais
                                             <i class="fa-solid fa-arrow-right"></i>

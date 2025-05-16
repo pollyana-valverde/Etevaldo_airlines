@@ -1,0 +1,52 @@
+.detalhes_header{
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.detalhes_header .header_title{
+    width: 91%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.detalhes_header .header_title h1{
+    margin: unset;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.detalhes_header .header_title .header_subtitle p{
+    margin-top: unset;
+}
+
+.detalhes_header .header_images{
+    display: flex;
+    gap: 20px;
+}
+
+.detalhes_header .header_images .mainImg{
+    border-radius: 20px;
+    width: 70%;
+    height: 750px;
+    object-fit: cover;
+}
+
+.detalhes_header .header_images .header_subImagens{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detalhes_header .header_images .header_subImagens img{
+    width: 500px;
+    height: 235px !important;
+    border-radius: 20px;
+    object-fit: cover;
+}
