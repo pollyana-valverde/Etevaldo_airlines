@@ -1,17 +1,18 @@
 .catalogo_corpo {
     display: flex;
-    margin-top: 70px;
-    position: absolute;
+
 }
 
 .selecao_catalogo {
     display: flex;
     flex-direction: column;
+    margin-top: 70px;
     width: 20%;
     align-items: center;
 }
 
 .produtos_catalogo {
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     width: 80%;
