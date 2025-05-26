@@ -55,6 +55,5 @@
 }
 
 .perfil_drop p, .perfil_drop h5 , .perfil_drop p i {
-    color: var(--white) !important;
     margin: unset !important;
 }

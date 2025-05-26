@@ -1,3 +1,18 @@
+@import url('geral.css');
+
+.navbar a{
+    color: var(--black);
+}
+
+.navbar a button{
+    border-color: var(--black);
+    color: var(--black) !important;
+}
+
+.navbar a button:hover{
+    color: var(--white) !important;
+}
+
 .login_container {
     height: 90vh;
     display: flex;

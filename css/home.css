@@ -1,5 +1,9 @@
 @import url('geral.css');
 
+.perfil_drop h5, .perfil_drop p, .perfil_drop p i{
+    color: var(--white);
+}
+
 .banner_inicio {
     background-image: url('../imagens/banner2.avif');
     background-repeat: no-repeat;
@@ -388,192 +392,13 @@
     margin-left: 10px;
     margin-right: -5px;
 }
-
-/*parte das ofertas*/
-
-.catalogoOffer_container {
-    display: flex;
-    align-items: start;
-    position: relative;
-    flex-direction: column;
-}
-
-.catalogoOffer_container .home_offer{
-    margin-top: 90px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.catalogoOffer_container .home_offer .home_offer_title{
-    margin: unset;
-    font-size: 35px;
-    font-weight: 400;
-}
-
-
-.catalogoOffer_container .buttons_catalogo {
-    display: flex;
-}
-
-.catalogoOffer_container .buttons_catalogo button.scroll-button {
-    color: var(--black);
-    background-color: var(--white);
-    padding: 7px 16px;
-    border-radius: 50px;
-    transition: all .3s ease;
-    border: 1px solid var(--superLowBlack);
-    font-size: 20px;
-    margin: 5px;
-}
-
-.catalogoOffer_container .buttons_catalogo button.scroll-button:hover {
-    color: var(--white);
-    background-color: var(--black);
-}
-
-.catalogoOffer_content {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto !important;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    scroll-behavior: smooth;
-    flex-grow: 1;
-    background-color: transparent;
-    padding: 10px;
-    border: none;
-    align-items: center;
-    gap: 30px;
+ 
+/*banner home*/
+.home_catalogo .home_banner{
+    margin: 80px 0;
+    margin-left: 10px;
     width: 98%;
-}
-
-.catalogoOffer_content .Offer_corpo {
-    position: relative;
-    width: 100%;
-}
-
-.catalogoOffer_content .Offer_corpo img {
-    width: 910px;
-    height: 320px;
+    height: 500px;
+    object-fit: cover;
     border-radius: 20px;
-    position: relative;
-}
-.catalogoOffer_content .Offer_corpo .Offer_detalhes {
-    width: 46%;
-    margin: 25px;
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    display: flex;
-    justify-content: center;
-    height: 80%;
-}
-
-.catalogoOffer_content .Offer_corpo .Offer_detalhes h1,
-.catalogoOffer_content .Offer_corpo .Offer_detalhes p {
-    color: var(--white);
-    margin: unset;
-}
-
-.catalogoOffer_content .Offer_corpo .Offer_detalhes a button{
-    background-color: var(--white);
-    color: var(--black);
-    border-radius: 50px;
-    padding: 7px 15px;
-    border: 1px solid var(--white);
-    font-size: 16px;
-    transition: all .3s ease;
-}
-
-.catalogoOffer_content .Offer_corpo .Offer_detalhes a button:hover{
-    background-color: transparent;
-    backdrop-filter: blur(6px);
-    color: var(--white);
-}
-
-
-/*parte das categorias*/
-
-.catalogoCateg_container {
-    display: flex;
-    align-items: start;
-    position: relative;
-    flex-direction: column;
-}
-
-.catalogoCateg_container .home_Categ{
-    margin-top: 90px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.catalogoCateg_container .home_Categ .home_Categ_title{
-    margin: unset;
-    font-size: 35px;
-    font-weight: 400;
-}
-
-
-.catalogoCateg_container .buttons_catalogo {
-    display: flex;
-}
-
-.catalogoCateg_container .buttons_catalogo button.scroll-button {
-    color: var(--black);
-    background-color: var(--white);
-    padding: 7px 16px;
-    border-radius: 50px;
-    transition: all .3s ease;
-    border: 1px solid var(--superLowBlack);
-    font-size: 20px;
-    margin: 5px;
-}
-
-.catalogoCateg_container .buttons_catalogo button.scroll-button:hover {
-    color: var(--white);
-    background-color: var(--black);
-}
-
-.catalogoCateg_content {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto !important;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    scroll-behavior: smooth;
-    flex-grow: 1;
-    background-color: transparent;
-    padding: 10px;
-    border: none;
-    align-items: center;
-    gap: 30px;
-    width: 98%;
-}
-
-.categ_content{
-    position: relative;
-
-}
-
-.catalogoCateg_content .categ_content img {
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    position: relative;
-}
-.catalogoCateg_content .categ_content h1 {
-    margin: 25px;
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: end;
-    height: 80%;
 }

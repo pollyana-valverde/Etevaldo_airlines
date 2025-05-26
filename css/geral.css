@@ -69,9 +69,32 @@
     color: var(--white);
 }
 
+footer {
+    width: 98%;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: var(--black);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h3,
+footer p {
+    margin: unset;
+    color: var(--white);
+}
+
+footer div {
+    background-color: var(--white);
+    height: 1px;
+    width: 80%;
+}
+
 /*cores para o dark mode*/
 
-:root{
+:root {
     --black: darkblue;
     --lowBlack: #00008b5e;
     --superLowBlack: #00008b13;
