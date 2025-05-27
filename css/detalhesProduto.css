@@ -1,14 +1,13 @@
-.detalhes_header{
+.detalhes_header {
     width: 98%;
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
     align-items: center;
     justify-content: center;
-    position: absolute;
 }
 
-.detalhes_header .header_title{
+.detalhes_header .header_title {
+    margin-top: 70px;
     width: 91%;
     display: flex;
     flex-direction: column;
@@ -16,37 +15,179 @@
     align-items: start;
 }
 
-.detalhes_header .header_title h1{
+.detalhes_header .header_title h1 {
     margin: unset;
     font-size: 35px;
     font-weight: 500;
 }
 
-.detalhes_header .header_title .header_subtitle p{
+.detalhes_header .header_title .header_subtitle p {
     margin-top: unset;
 }
 
-.detalhes_header .header_images{
+.detalhes_header .header_images {
     display: flex;
     gap: 20px;
 }
 
-.detalhes_header .header_images .mainImg{
+.detalhes_header .header_images .mainImg {
     border-radius: 20px;
     width: 70%;
     height: 750px;
     object-fit: cover;
 }
 
-.detalhes_header .header_images .header_subImagens{
+.detalhes_header .header_images .header_subImagens {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.detalhes_header .header_images .header_subImagens img{
+.detalhes_header .header_images .header_subImagens img {
     width: 500px;
     height: 235px !important;
     border-radius: 20px;
     object-fit: cover;
+}
+
+/*parte do meio dos detalhes*/
+.dealhes_content {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    margin-left: 35px;
+    margin-right: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dealhes_content .detalhes_descricao {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dealhes_content .detalhes_descricao h1 {
+    margin: unset;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.dealhes_content .detalhes_descricao p {
+    margin: unset;
+}
+
+.dealhes_content .detalhes_descricao .detalhes_host {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dealhes_content .detalhes_descricao .detalhes_host h1 {
+    margin: unset;
+}
+
+.dealhes_content .detalhes_descricao .detalhes_host .detalhes_host_container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.dealhes_content .detalhes_descricao .detalhes_host .detalhes_host_container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+
+.dealhes_content .detalhes_descricao .detalhes_host .detalhes_host_container .detalhes_host_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dealhes_content .detalhes_descricao .detalhes_host .detalhes_host_container .detalhes_host_content h5 {
+    margin: unset;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.dealhes_content .detalhes_price {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lowBlack);
+    padding: 20px;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.dealhes_content .detalhes_price h2 {
+    font-weight: 500;
+    margin: unset;
+}
+
+.dealhes_content .detalhes_price .detalhes_price_content {
+    display: flex;
+    background-color: var(--white);
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 30px;
+}
+
+.dealhes_content .detalhes_price .detalhes_price_content .detalhes_price_checkIn {
+    display: flex;
+    gap: 30px;
+}
+
+.dealhes_content .detalhes_price .detalhes_price_content .detalhes_price_checkIn .checkIn {
+    display: flex;
+    flex-direction: column;
+}
+
+.dealhes_content .detalhes_price .detalhes_price_content .detalhes_price_checkIn .checkIn h5,
+.dealhes_content .detalhes_price .detalhes_price_content .detalhes_price_checkIn .checkIn p{
+    margin: unset;
+}
+
+.dealhes_content .detalhes_price .detalhes_price_content .detalhes_price_checkIn .checkIn h5{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.dealhes_content .detalhes_price .detalhes_price_content .detalhes_price_checkIn .checkIn p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.dealhes_content .detalhes_price .detalhes_price_content .detalhes_price_guest {
+    display: flex;
+    flex-direction: column;
+}
+
+.dealhes_content .detalhes_price .detalhes_price_content .detalhes_price_guest h5{
+    margin: unset;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.dealhes_content .detalhes_price .detalhes_price_content .detalhes_price_guest select{
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid var(--black);
+    background-color: transparent;
+}
+
+.dealhes_content .detalhes_price button{
+    background-color: var(--black);
+    border: 1px solid var(--black);
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--white);
+    font-size: 22px;
+    transition: all .3s ease ;
+}
+
+.dealhes_content .detalhes_price button:hover{
+    border-color: var(--white);
+    background-color: transparent;
 }
