@@ -191,3 +191,31 @@
     border-color: var(--white);
     background-color: transparent;
 }
+
+.detalhes_localizacao {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detalhes_localizacao h1, .detalhes_localizacao p{
+    width: 95%;
+    margin: unset;
+    text-align: left;
+}
+
+.detalhes_localizacao h1{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.detalhes_localizacao p{
+    margin-bottom: 20px;
+}
+
+.detalhes_localizacao iframe{
+    width: 95% !important;
+    border-radius: 20px;
+}
